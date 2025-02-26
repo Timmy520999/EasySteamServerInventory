@@ -50,7 +50,7 @@
 *  "itemdefid": "1001" :This is a tool item and it cannot be retrieved by the game nodes. When executing the item - dropping node, the ID of the tool item needs to be passed in.
 *  In the following examples, the content after "//" is annotation and can be deleted.
 
-## 9. Examples
+## 9. Examples JSON
     {
 	"appid": YorAppID,
 	"items": [
