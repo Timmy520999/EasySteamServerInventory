@@ -123,3 +123,116 @@
 
 ## 10. Additional paid value - added services
     Configuring complex Item Definitions is a complicated task. I can provide paid services for developers in need to configure complex Item JSON. Developers with such needs can contact me via the email on the Fab homepage.
+
+## 11. The following are slightly more complex examples for developers in need to explore
+
+<img src="./IMG/Guide.jpg">
+
+	{
+		"appid": YorAppID,  //A somewhat difficult example.
+		"items": [
+		{
+			"appid": "YorAppID",
+			"itemdefid": "101", // 2xx,is “playtimegenerator Type”
+			"type": "playtimegenerator", //In-game generator
+			"bundle": "301x100;201x12",  //100% chance to obtain Item 301; 12% chance to obtain Item 201
+			"item_slot": "playtimegenerator",
+			"display_type": "playtime generator Tools",
+			"name_english": "English Item Name",
+			"name_spanish": "Other languages Item Name", //If you don't need other languages, you can delete this line.
+			"quantity": 0, // Allways 0,it means Unlimited.
+			"description_english": "English description",
+			"description_spanish": "Herramienta de caída del tiempo de juego",
+			"background_color": "3C352E",
+			"icon_url": "https://xxx/xxx/Nanme_200_200.png",  //The address where your item icon is hosted on any publicly accessible website.
+			"icon_url_large": "https://xxx/xxx/Nanme_1024_1024.png", //The address where your item icon is hosted on any publicly accessible website.
+			"name_color": "7D6D00",
+			"tradable": false,
+			"marketable": false,
+			"commodity": false,
+		},
+		{
+			"appid": "YorAppID",
+			"itemdefid": "201", // 2xx,is “generator Type”
+			"type": "generator", //server generator
+			"bundle": "401x80;501x60",  //80% chance to obtain Item 401; 60% chance to obtain Item 501
+			"item_slot": "generator",
+			"display_type": "Generator Tools",
+			"name_english": "English Item Name",
+			"name_spanish": "Other languages Item Name", //If you don't need other languages, you can delete this line.
+			"quantity": 0, // Allways 0,it means Unlimited.
+			"description_english": "English description",
+			"description_spanish": "Other language description, you can add more than one language, just add a new entry, modify its name suffix", //If you don't need other languages, you can delete this line.
+			"background_color": "3C352E",
+			"icon_url": "https://xxx/xxx/Nanme_200_200.png",  //The address where your item icon is hosted on any publicly accessible website.
+			"icon_url_large": "https://xxx/xxx/Nanme_1024_1024.png", //The address where your item icon is hosted on any publicly accessible website.
+			"name_color": "7D6D00",
+			"tradable": false,
+			"marketable": false,
+			"commodity": false,
+		},
+		{
+			"appid": "YorAppID",
+			"itemdefid": "301", // 3xx,is “Bundle Type”
+			"type": "Bundle",
+			"Bundle":"401x7;501x2" //This bundle will automatically expand into: 7 Item 401 and 2 Item 501.
+			"display_type": "Bundle Type",
+			"name_english": "English Item Name",
+			"name_spanish": "Other languages Item Name", //If you don't need other languages, you can delete this line.
+			"quantity": 0, // Allways 0,it means Unlimited.
+			"description_english": "English description",
+			"description_spanish": "Other language description, you can add more than one language, just add a new entry, modify its name suffix", //If you don't need other languages, you can delete this line.
+			"background_color": "3C352E",
+			"icon_url": "https://xxx/xxx/Nanme_200_200.png",  //The address where your item icon is hosted on any publicly accessible website.
+			"icon_url_large": "https://xxx/xxx/Nanme_1024_1024.png", //The address where your item icon is hosted on any publicly accessible website.
+			"name_color": "7D6D00",
+			"store_tags": "bundle prop",
+			"tradable": true,
+			"marketable": true,
+			"commodity": true,
+		},
+		{
+			"appid": "YorAppID",
+			"itemdefid": "401", // 4xx,is "simplest item type"
+			"type": "Item",
+			"display_type": "Prop Item",
+			"name_english": "English Item Name",
+			"name_spanish": "Other languages Item Name", //If you don't need other languages, you can delete this line.
+			"price": "1;VLV25", // The selling price of an Item can be USD25, which represents 0.25 USD. VLV25 is a preset price, where we handle the various currency values for you.
+			"quantity": 0,  // Allways 0,it means Unlimited.
+			"description_english": "English description",
+			"description_spanish": "Other language description, you can add more than one language, just add a new entry, modify its name suffix", //If you don't need other languages, you can delete this line.
+			"background_color": "3C352E",
+			"icon_url": "https://xxx/xxx/Nanme_200_200.png",  //The address where your item icon is hosted on any publicly accessible website.
+			"icon_url_large": "https://xxx/xxx/Nanme_1024_1024.png", //The address where your item icon is hosted on any publicly accessible website.
+			"name_color": "7D6D00",
+			"store_tags": "Item prop",
+			"tradable": false,
+			"marketable": false,
+			"commodity": true,
+			"auto_stack": true,
+			"granted_manually": true,  
+		},
+		{
+			"appid": "YorAppID",
+			"itemdefid": "501", // 5xx,is “Bundle Type”
+			"type": "Item",
+			"display_type": "Prop Item",
+			"name_english": "English Item Name",
+			"name_spanish": "Other languages Item Name", //If you don't need other languages, you can delete this line.
+			"price": "1;VLV100", // The selling price of an Item can be USD100, which represents 1.00 USD. VLV100 is a preset price, where we handle the various currency values for you.
+			"quantity": 0, // Allways 0,it means Unlimited.
+			"description_english": "English description",
+			"description_spanish": "Other language description, you can add more than one language, just add a new entry, modify its name suffix", //If you don't need other languages, you can delete this line.
+			"background_color": "3C352E",
+			"icon_url": "https://xxx/xxx/Nanme_200_200.png",  //The address where your item icon is hosted on any publicly accessible website.
+			"icon_url_large": "https://xxx/xxx/Nanme_1024_1024.png", //The address where your item icon is hosted on any publicly accessible website.
+			"name_color": "7D6D00",
+			"exchange": "401x5",  //401 is the ID for redeeming this Item, and 5 is the required quantity. You can set multiple redemption recipes. For example:"exchange":"100,101;102x5;103x3,104x3" Or "exchange":"201x1,202x1;flavor:banana,mass:heavy" Or "exchange":"rarity:common*5",
+			"store_tags": "Item prop",
+			"tradable": true,
+			"marketable": true,
+			"commodity": true,
+		}
+		]
+	}
