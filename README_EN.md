@@ -215,7 +215,7 @@
 		},
 		{
 			"appid": "YorAppID",
-			"itemdefid": "501", // 5xx,is “Bundle Type”
+			"itemdefid": "501", // 5xx,is Could be exchange "simplest item type"
 			"type": "Item",
 			"display_type": "Prop Item",
 			"name_english": "English Item Name",
